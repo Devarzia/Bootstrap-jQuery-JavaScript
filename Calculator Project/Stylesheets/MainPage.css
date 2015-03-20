@@ -1,0 +1,19 @@
+﻿.error 
+{
+    font-weight: bolder;
+    color: red;
+}
+
+.title 
+{
+    text-align: center;
+}
+
+.panel 
+{
+    text-align: center;
+}
+#operations
+{
+    left: 525px;
+}

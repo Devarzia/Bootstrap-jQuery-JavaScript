@@ -1,0 +1,99 @@
+﻿Below is another way to perform the same actions:
+
+Event Handler Assignment
+window.onload = calculateResult;
+
+Event Listener Assignment
+window.addEventListener("load", addResult);
+window.addEventListener("load", subtractResult);
+window.addEventListener("load", multiplyResult);
+window.addEventListener("load", divideResult);
+
+function addResult()
+{
+var addButton = but("butAdd");
+addButton.addEventListener("click", function ()
+{
+    var firstNumber = parseInt(but("txtFirstNumber").value);
+    var secondNumber = parseInt(but("txtSecondNumber").value);
+    var resultObject = but("Result");
+
+    var result = firstNumber + secondNumber;
+
+    if (!result)
+    {
+        resultObject.innerHTML = "Please Enter Values";
+        txtFirstNumber.focus();
+    }
+    else
+    {
+        resultObject.innerHTML = "Result: " + result;
+    }
+});
+}
+function subtractResult()
+{
+var subtractButton = but("butSubtract");
+subtractButton.addEventListener("click", function ()
+{
+    var firstNumber = but("txtFirstNumber").value;
+    var secondNumber = but("txtSecondNumber").value;
+    var resultObject = but("Result");
+
+    var result = firstNumber - secondNumber;
+
+    if (!result)
+    {
+        resultObject.innerHTML = "Please Enter Values";
+        txtFirstNumber.focus();
+    }
+    else
+    {
+        resultObject.innerHTML = "Result: " + result;
+    }
+});
+}
+function multiplyResult()
+{
+var multiplyButton = but("butMultiply");
+multiplyButton.addEventListener("click", function ()
+{
+    var firstNumber = but("txtFirstNumber").value;
+    var secondNumber = but("txtSecondNumber").value;
+    var resultObject = but("Result");
+
+    var result = firstNumber * secondNumber;
+
+    if (!result)
+    {
+        resultObject.innerHTML = "Please Enter Values";
+        txtFirstNumber.focus();
+    }
+    else
+    {
+        resultObject.innerHTML = "Result: " + result;
+    }
+});
+}
+function divideResult()
+{
+var divideButton = but("butDivide");
+divideButton.addEventListener("click", function ()
+{
+    var firstNumber = but("txtFirstNumber").value;
+    var secondNumber = but("txtSecondNumber").value;
+    var resultObject = but("Result");
+
+    var result = firstNumber / secondNumber;
+
+    if (!result)
+    {
+        resultObject.innerHTML = "Please Enter Values";
+        txtFirstNumber.focus();
+    }
+    else
+    {
+        resultObject.innerHTML = "Result: " + result;
+    }
+});
+}

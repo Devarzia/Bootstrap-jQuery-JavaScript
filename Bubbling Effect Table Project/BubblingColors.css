@@ -1,0 +1,20 @@
+﻿body 
+{
+    max-width: 960px;
+    background: -webkit-radial-gradient(circle, #0000FF, #000000);
+    color: white;
+    text-align: center;
+}
+table#Bubbling td
+{
+   border-spacing: 15px;
+   padding: 20px;
+   border: 1px black solid;
+   text-align: left;
+}
+.select
+{
+    background-color: red;
+    color: black;
+    font-weight: bolder;
+}
